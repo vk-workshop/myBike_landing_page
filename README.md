@@ -1,10 +1,10 @@
-# Bike Landing Page
+# myBike Landing Page
 
 A modern, responsive landing page for a bike store or rental service, showcasing stylish design and smooth animations.
 
 ## Live Demo
 
-Check out the live site here: [Bike Landing Page]( https://vk-workshop.github.io/bike_landing_page/)
+Check out the live site here: [Bike Landing Page](https://vk-workshop.github.io/myBike_landing_page/)
 
 ## Features
 
@@ -30,7 +30,7 @@ To launch the project locally, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/bike_landing.git
+   git clone https://github.com/your-username/myBike_landing.git
    cd bike_landing
 
 2. **Install Dependencies**:
