@@ -1,4 +1,4 @@
-# myBike Landing Page
+# myBike
 
 A modern, responsive landing page for a bike store or rental service, showcasing stylish design and smooth animations.
 
