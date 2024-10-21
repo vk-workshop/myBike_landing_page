@@ -1,0 +1,76 @@
+@mixin onTablet {
+  @media (min-width: $tablet-min-width) {
+    @content;
+  }
+}
+
+@mixin onDesktop {
+  @media (min-width: $desktop-min-width) {
+    @content;
+  }
+}
+
+@mixin h2 {
+  font-size: 32px;
+  font-weight: $font-weight-500-mobile;
+  letter-spacing: $letter-spacing-1-5-mobile;
+  line-height: $line-height-32-mobile;
+
+  @include onTablet {
+    font-size: 48px;
+  }
+
+  @include onDesktop {
+    font-size: 64px;
+  }
+}
+
+@mixin h3 {
+  font-size: 24px;
+  font-weight: $font-weight-700-mobile;
+  margin-inline: auto;
+
+  @include onTablet {
+    max-width: 600px;
+    margin-inline: auto;
+  }
+
+  @include onDesktop {
+    margin-inline: auto;
+    max-width: 1020px;
+  }
+}
+
+@mixin contentPaddingInline {
+  padding-inline: 20px;
+
+  @include onTablet {
+    padding-inline: 72px;
+  }
+
+  @include onDesktop() {
+    padding-inline: 120px;
+  }
+}
+
+@mixin pageGrid {
+  display: grid;
+  margin-inline: auto;
+  max-width: 320px;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+
+  @include onTablet {
+    grid-template-columns: repeat(6, 1fr);
+    margin: 0 72px;
+    margin-inline: auto;
+    max-width: 600px;
+  }
+
+  @include onDesktop {
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0 120px;
+    margin-inline: auto;
+    max-width: 1020px;
+  }
+}

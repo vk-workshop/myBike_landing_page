@@ -1,0 +1,22 @@
+.main {
+  padding: 0 20px;
+  column-gap: 20px;
+
+  @include onTablet {
+    padding: 0;
+  }
+
+  &__p {
+    margin: 0;
+  }
+
+  &__price {
+    font-size: 24px;
+    font-weight: $font-weight-700-mobile;
+    margin: 16px 0 40px;
+  }
+
+  &__price:last-child {
+    margin-bottom: 0;
+  }
+}

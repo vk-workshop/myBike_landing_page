@@ -1,0 +1,121 @@
+.contact {
+  @include pageGrid;
+
+  &__title {
+    @include h2;
+    margin: 80px 0 48px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    grid-column: 1 / -1;
+
+    @include onDesktop {
+      font-size: 48px;
+      font-weight: 600;
+    }
+  }
+
+  &__form-name,
+  &__form-email {
+    margin-bottom: 16px;
+  }
+
+  &__description {
+    font-size: 16px;
+    font-weight: $font-weight-500-mobile;
+    line-height: 140%;
+    margin: 0;
+    font-style: normal;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      color: $placeholder-color;
+    }
+  }
+
+  &__contact {
+    margin: 0 0 24px;
+  }
+
+  &__info-title {
+    font-size: 14px;
+    line-height: 140%;
+    margin: 0 0 8px;
+    font-style: normal;
+  }
+
+  &__form-container {
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      grid-column: 1 / 4;
+    }
+
+    @include onDesktop {
+      grid-column: 1 / 6;
+    }
+  }
+
+  &__info-group {
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      grid-column: 4 / -2;
+    }
+
+    @include onDesktop {
+      grid-column: 8 / -3;
+    }
+  }
+
+  &__form,
+  &__send,
+  &__label {
+    display: grid;
+  }
+
+  &__input {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    background-color: $input-background-color;
+    color: $input-color;
+    font-size: 14px;
+    line-height: $line-height-20-mobile;
+    height: 48px;
+    padding-left: 16px;
+    font-family: $page-font-family;
+
+    &::placeholder {
+      color: $placeholder-color;
+      font-family: $page-font-family;
+      font-size: 14px;
+      line-height: $line-height-20-mobile;
+    }
+  }
+
+  &-area {
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    padding: 14px 16px;
+    color: $input-color;
+    line-height: $line-height-20-mobile;
+    background-color: $input-background-color;
+    font-size: 14px;
+    margin-bottom: 32px;
+    resize: none;
+    font-family: $page-font-family;
+
+    &::placeholder {
+      color: $placeholder-color;
+      font-family: $page-font-family;
+      font-size: 14px;
+      line-height: $line-height-20-mobile;
+    }
+  }
+}
+
